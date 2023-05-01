@@ -152,14 +152,14 @@ export class LocationManager {
     }
   }
 
-  start(displacement = -1) {
+  start(displacement = 0) {
     let validDisplacement = 1;
     if (
       displacement === -1 ||
       displacement === null ||
       displacement === undefined
     ) {
-      validDisplacement = this._minDisplacement || -1;
+      validDisplacement = this._minDisplacement || 0;
     } else {
       validDisplacement = displacement;
     }
